@@ -3065,7 +3065,7 @@ AC_HEADER_MAJOR
 
 # If using nt threads, don't look for pthread.h or thread.h
 if test "x$with_nt_threads" = xno ; then
-AC_HEADER_STDC
+
 AC_CHECK_HEADERS(pthread.h sched.h thread.h)
 AC_HEADER_DIRENT
 AC_HEADER_MAJOR
@@ -8049,7 +8049,7 @@ PY_STDLIB_MOD([_overlapped], [test "$MACHDEP" = "win32"], [], [],
 dnl test modules
 PY_STDLIB_MOD([_testcapi], [test "$TEST_MODULES" = yes])
 PY_STDLIB_MOD([_testclinic], [test "$TEST_MODULES" = yes])
-PY_STDLIB_MOD([_testinternalcapi], [test "$TEST_MODULES" = yes], [], [-DPY3_DLLNAME="\"$DLLLIBRARY\""], [])
+PY_STDLIB_MOD([_testinternalcapi], [test "$TEST_MODULES" = yes], [], [-DPY3_DLLNAME="$DLLLIBRARY"], [])
 PY_STDLIB_MOD([_testbuffer], [test "$TEST_MODULES" = yes])
 PY_STDLIB_MOD([_testimportmultiple], [test "$TEST_MODULES" = yes], [test "$have_dynamic_loading" = yes])
 PY_STDLIB_MOD([_testmultiphase], [test "$TEST_MODULES" = yes], [test "$have_dynamic_loading" = yes])
