@@ -506,7 +506,7 @@
 /* Define this if you have the 6-arg version of gethostbyname_r(). */
 #undef HAVE_GETHOSTBYNAME_R_6_ARG
 
-/* Define to 1 if you have the `gethostname' function. */
+/* Define if you have the 'gethostname' function. */
 #undef HAVE_GETHOSTNAME
 
 /* Define to 1 if you have the `getitimer' function. */
@@ -1120,7 +1120,7 @@
 /* Define to 1 if you have the `shm_unlink' function. */
 #undef HAVE_SHM_UNLINK
 
-/* Define to 1 if you have the `shutdown' function. */
+/* Define if you have the 'shutdown' function. */
 #undef HAVE_SHUTDOWN
 
 /* Define to 1 if you have the `sigaction' function. */
@@ -1410,6 +1410,9 @@
 /* Define to 1 if you have the <term.h> header file. */
 #undef HAVE_TERM_H
 
+/* Define to 1 if you have the <thread.h> header file. */
+#undef HAVE_THREAD_H
+
 /* Define to 1 if you have the `timegm' function. */
 #undef HAVE_TIMEGM
 
@@ -1528,6 +1531,9 @@
 
 /* Define to 1 if you have the `writev' function. */
 #undef HAVE_WRITEV
+
+/* Define to 1 if you have the <ws2tcpip.h> header file. */
+#undef HAVE_WS2TCPIP_H
 
 /* Define if the zlib library has inflateCopy */
 #undef HAVE_ZLIB_COPY
