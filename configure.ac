@@ -3271,7 +3271,6 @@ AC_HEADER_MAJOR
 
 # If using nt threads, don't look for pthread.h or thread.h
 if test "x$with_nt_threads" = xno ; then
-AC_HEADER_STDC
 AC_CHECK_HEADERS(pthread.h sched.h thread.h)
 AC_HEADER_DIRENT
 AC_HEADER_MAJOR
